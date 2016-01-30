@@ -165,8 +165,6 @@ FUTURE UPDATES :
 
 - Make the code use openMP and openMPI.
 
-- Tidy up the declarations in header files properly.
-
 - Remove the code related to mh0 option.
 
 
