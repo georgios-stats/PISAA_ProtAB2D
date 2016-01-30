@@ -17,7 +17,7 @@
 */
 
 /*
- * Georgios Karagiannis 
+ * Georgios Karagiannis
  * Postdoctoral research associate
  * Department of Mathematics, Purdue University
  * 150 N. University Street
@@ -30,49 +30,23 @@
  * Contact email: georgios.stats@gmail.com
 */
 
+void Mutation_HitAndRun(double *, double *,
+				int ,
+				double *, double *, int ,
+				double , double , double *,
+				double *) ;
 
-/* declare the headers */
+void Mutation_Kpoint(double *, double *,
+				int ,
+				double *, double *, int ,
+				double , double , double *,
+				double *) ;
 
-#include <stdlib.h>
-#include <math.h>
-
-#include "RNG.h"
-
-/* initializes a seed */
-
-void setseedrng(unsigned long s)
-{
-	srand( s ) ;
-}
-
-double uniformrng(void)
-{
-	double rnd ;
-
-	do {
-		rnd = (double) ( rand() / ( RAND_MAX + 1.0 ) ) ;
-	} while ( rnd == 0.0 || rnd == 1.0 ) ;
-
-	return rnd ;
-}
-
-/* DEFAULT : generates a random number on [a,b]-real-interval */
-
-int integerrng(int a, int b)
-{
-/*	if (b>0)
-		return (int) a + rand()%b ;
-	else*/
-		return a +floor(uniformrng()*(b-a+1)) ;
-}
-
-
-
-
-
-
-
-
+void Mutation_Metropolis(double *, double *,
+				int ,
+				double *, double *, int ,
+				double , double , double *,
+				double *) ;
 
 
 

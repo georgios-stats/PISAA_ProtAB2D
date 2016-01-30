@@ -20,6 +20,8 @@
 #include "nrutil.h"
 #include <stdio.h>
 
+#include "cost_protein2D.h"
+
 #ifndef INFINITY
 	#include <float.h>
 	#define INFINITY DBL_MAX
